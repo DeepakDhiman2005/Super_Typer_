@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SuperTyper</title>
+</head>
+<body id="bodyselect">
+    <div class="intro" id="intro">
+        <div class="top-side">
+            <h1>Welcome To </h1>
+        </div>
+        <div class="bottom-side">
+            <select name="" id="selectid">
+                <option value="About">About</option>
+                <option value="A to Z">A to Z</option>
+                <option value="Typing">Typing<option>
+            </select>
+            <button id="btn3">Start</button>
+        </div>
+    </div>
+    <div class="top-box">
+        <i class="time-box" id="timebox">Time:- 0:0</i>
+        <div class="timer-box">
+            <label for="Minutes">Minutes: <input type="number" placeholder="min" id="in1"></label>
+            <label for="Seconds">Seconds: <input type="number" placeholder="sec" id="in2"></label>
+        </div>
+        <button id="btn">SetTime</button>
+    </div>
+    <div class="container">
+        <div class="upbox">
+            <div id="paraid"></div>
+        </div>
+        <div class="downbox">
+            <input type="search" placeholder="Write the paragraph!" id="inputid" >
+        </div>
+
+        <div class="total-words-score">
+            <div class="color-about">
+                <div class="color-about-box">
+                    <div class="circle" style="background: red;"></div>
+                    <p>Errore</p>
+                </div>
+                <div class="color-about-box">
+                    <div class="circle" style="background: lightgreen;"></div>
+                    <p>Backspace</p>
+                </div>
+                <div class="color-about-box">
+                    <div class="circle" style="background: purple;"></div>
+                    <p>Correct Typing</p>
+                </div>
+            </div>
+            <h1>Your Typing... Speed Score!</h1>
+            <div id="Tws"></div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>

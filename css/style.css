@@ -1,0 +1,285 @@
+*{margin: 0;padding: 0;}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(45deg, aliceblue, whitesmoke, 
+    white, azure,ghostwhite, rgb(230, 229, 229), floralwhite);*/
+    background: linear-gradient(184deg, floralwhite,
+    lightgoldenrodyellow, beige, antiquewhite);
+}
+.intro::before{
+    content: "";
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    border: 90px solid dodgerblue;
+    border-left: 1000px solid transparent;
+    border-bottom: 32rem solid transparent;
+    filter: drop-shadow(0px 0px 10px deepskyblue);
+}
+.intro::after{
+    content: "";
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    border: 105px solid papayawhip;
+    border-right: 600px solid transparent;
+    border-top: 26rem solid transparent;
+    filter: drop-shadow(0px 0px 10px bisque);
+}
+
+.top-side{
+    margin-bottom: 15px;
+    z-index: 1;
+}
+.top-side h1{
+    color: deepskyblue;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    /* filter: drop-shadow(8px 7px 5px silver); */
+}
+.top-side h1::after{
+    content: "SuperTyper...";
+    color: blue;
+    text-decoration: underline;
+    filter: drop-shadow(0px 0px 2px lightskyblue);
+}
+.bottom-side{
+    z-index: 1;
+}
+
+@media only screen and (max-width: 320px) {
+    .top-side h1{
+        font-size: 25px;
+    }
+}
+
+select{
+    padding: 8px;
+    background: blueviolet;
+    border: 1px solid cornflowerblue;
+    border-radius: 2px;
+    cursor: pointer;
+    color: floralwhite;
+}
+select:focus-within{
+    outline: none;
+    border: 1px solid cornflowerblue;
+}
+select option{
+    color: #4a4a4a;
+    background: whitesmoke;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.top-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(45deg, deepskyblue 50%, lightskyblue);
+    width: 100%;
+    z-index: 1;
+    position: static;
+    top: 0%;
+}
+
+.time-box{
+    font-size: 28px;
+    margin: 10px 0px 10px 0px;
+}
+
+.timer-box label input{
+    width: 3rem;
+}
+
+button{
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+}
+button:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 90vh;  */
+    width: 100%;
+    /* background: linear-gradient(70deg, aliceblue, whitesmoke, 
+    white, azure,ghostwhite, rgb(230, 229, 229)); */
+}
+
+.upbox{
+    width: 70%; height: auto;
+    /* height: 10rem; */
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 0px 0px 15px silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: whitesmoke; */
+    background-color: ivory;
+    margin: 4rem 0px 4rem 0px;
+}
+
+.downbox{
+    width: 70%;
+}
+/* .downbox textarea{ */
+.downbox input{
+    width: 100%; height: 100px;
+    background-color: lightskyblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    margin: 2rem 0px 2rem 0px;
+    box-shadow: 0px 0px 15px lightskyblue;
+    border: none; outline: none;
+}
+.downbox input::placeholder{
+    color: floralwhite;
+}
+.downbox input:focus-within{
+    background-color: whitesmoke;
+}
+
+
+#paraid::selection{
+    color: lightskyblue;
+}
+
+mark{
+    background: none;
+    color: blue;
+}
+
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(58, 58, 58);
+    border: 6px solid whitesmoke;
+    border-radius: 40px;
+}
+
+.total-words-score{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-content: space-between;
+    justify-content: center;
+}
+.scoreandgameabout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scoreandgameabout h1, h1{
+    margin-top: 10px;
+    color: blueviolet;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.color-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.color-about-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle{
+    width: 20px; height: 20px;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin-right: 4px;
+}
+
+.wordsscore-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    margin: 15px 0px 15px 0px;
+    box-shadow: 0px 0px 7px cornflowerblue;
+    height: 150px;
+}
+.wordsscore-style p{
+    /* margin: 15px 0px 15px 12px; */
+    margin-left: 12px;
+}
+
+.wordsscore-style-top{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.wordsscore-style-top button{
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 440px) {
+    .top-box{
+        flex-direction: column-reverse;
+        height: 18vh;
+    }
+    .color-about{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .color-about-box{
+        margin: 10px;
+    }
+    .total-words-score{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .scoreandgameabout{
+        flex-direction: column;
+    }
+    .scoreandgameabout h1{
+        margin-bottom: 10px;
+    }
+}
